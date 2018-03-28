@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyScript : MonoBehaviour {
 
 	public int EnemyHealth = 10;
+	public GameObject TheStoneMonster;
 
 	void DeductPoints (int DamageAmount) {
 		EnemyHealth -= DamageAmount;
@@ -12,7 +13,14 @@ public class EnemyScript : MonoBehaviour {
 
 	void Update () {
 		if (EnemyHealth <= 0) {
-			Destroy(gameObject);
+			this.GetComponent<StoneMonsterFollow>().enabled = false;
+			TheStoneMonster.GetComponent<Animation>().Play("Anim_Death");
+			StartCoroutine(EndStoneMonster());
 		}
 	}
+
+	IEnumerator EndStoneMonster() {
+		yield return new WaitForSeconds(0.28f);
+		Destroy(gameObject);
+}
 }

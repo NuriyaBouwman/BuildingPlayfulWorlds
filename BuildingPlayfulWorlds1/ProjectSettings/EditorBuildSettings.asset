@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/BPW les2.unity
+    guid: 57a59ee17d2f419478af1501289ef4ed
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: b76318366a2a674479dcbf3432b1c9e0
