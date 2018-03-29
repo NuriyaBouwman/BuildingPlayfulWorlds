@@ -34,7 +34,7 @@ public class StoneMonsterFollow : MonoBehaviour {
 				EnemySpeed = 0.03f;
 				if (AttackTrigger == 0) {
 					TheEnemy.GetComponent<Animation>().Play("Anim_Run");
-					transform.position = Vector3.MoveTowards(transform.position, ThePlayer.transform.position, EnemySpeed);
+					transform.position = Vector3.MoveTowards(transform.position, ThePlayer.transform.position, EnemySpeed * Time.deltaTime);
 				}
 			}
 			else {
