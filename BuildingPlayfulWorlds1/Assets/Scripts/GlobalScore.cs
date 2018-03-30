@@ -9,12 +9,6 @@ public class GlobalScore : MonoBehaviour {
 	public int InternalScore;
 	public GameObject ScoreText;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
 	void Update () {
 		InternalScore = CurrentScore;
 		ScoreText.GetComponent<Text>().text = "" + InternalScore;

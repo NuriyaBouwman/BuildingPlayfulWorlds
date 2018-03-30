@@ -6,7 +6,6 @@ public class AmmoPickUp : MonoBehaviour {
 
 	public AudioSource AmmoSound;
 
-	// Use this for initialization
 	void OnTriggerEnter (Collider other) {
 
 		AmmoSound.Play();
@@ -21,10 +20,5 @@ public class AmmoPickUp : MonoBehaviour {
 			GlobalAmmo.CurrentAmmo += 10;
 			this.gameObject.SetActive(false);
 		}
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 }

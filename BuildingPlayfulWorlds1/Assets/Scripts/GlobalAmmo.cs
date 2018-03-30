@@ -13,12 +13,6 @@ public class GlobalAmmo : MonoBehaviour {
 	public int InternalLoaded;
 	public GameObject LoadedDisplay;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
 	void Update () {
 
 	InternalAmmo = CurrentAmmo;

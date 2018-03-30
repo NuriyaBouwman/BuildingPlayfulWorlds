@@ -8,7 +8,6 @@ public class PauseGame : MonoBehaviour {
 	public bool Paused = false;
 	public GameObject ThePlayer;
 
-	// Update is called once per frame
 	void Update () {
 
 		if (Input.GetButtonDown("Cancel")) {

@@ -7,8 +7,7 @@ public class HandGunDamage : MonoBehaviour {
 	public int DamageAmount = 5;
 	public float TargetDistance;
 	public float AllowedRange = 15.0f;
-	
-	// Update is called once per frame
+
 	void Update () {
 		if(Input.GetMouseButtonDown(0)) {
 
